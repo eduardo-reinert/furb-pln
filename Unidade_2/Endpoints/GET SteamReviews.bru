@@ -1,0 +1,21 @@
+meta {
+  name: GET SteamReviews
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://store.steampowered.com/appreviews/730?json=1&num_per_page=500&cursor=AoIFQFZhheAAAAB75dP/BQ==
+  body: none
+  auth: inherit
+}
+
+params:query {
+  json: 1
+  num_per_page: 500
+  cursor: AoIFQFZhheAAAAB75dP/BQ==
+}
+
+settings {
+  encodeUrl: true
+}

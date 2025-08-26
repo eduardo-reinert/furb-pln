@@ -1,0 +1,19 @@
+meta {
+  name: GET SteamGameDetails
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://store.steampowered.com/api/appdetails?appids=730
+  body: none
+  auth: inherit
+}
+
+params:query {
+  appids: 730
+}
+
+settings {
+  encodeUrl: true
+}
